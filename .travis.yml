@@ -3,7 +3,7 @@ compiler: gcc
 env:
   global:
     - secure: "JIUFWD7JojZ6b1mmtbf4/lj5pEYGO403nYuH6yHjQyZYIsKzvZhN2s6rI/HsrenCYVI5nLvZjgTN3uD8uJS06QerQo/RxwPiBKik/MbQeFMjBGuMeZLG7A1ewvo6FXD4n2WZoif6Q5N3jUQxv1uSijcX+tqtCoGlV/0davGcl+M="
-  - APT_DEPENDENCIES: doxygen doxygen-latex libboost-all-dev libeigen3-dev
+  - APT_DEPENDENCIES: "doxygen doxygen-latex libboost-all-dev libeigen3-dev"
   - GIT_DEPENDENCIES=""
   - DEBSIGN_KEYID=5AE5CD75
 notifications:
