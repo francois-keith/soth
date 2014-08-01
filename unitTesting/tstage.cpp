@@ -55,4 +55,5 @@ int main (int , char** )
 
   Eigen::MatrixXd rec;
   stages[0]->recompose(rec);
+  return 0;
 }

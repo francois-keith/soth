@@ -423,7 +423,7 @@ int main (int argc, char** argv)
     if (optionMap.count("help"))
       {
 	std::cout << desc << std::endl;
-	exit(0);
+	return (0);
       }
 
     int nbExclusive = 0;
@@ -433,7 +433,7 @@ int main (int argc, char** argv)
     if( nbExclusive>1 )
       {
 	std::cout << "Option bin, file and seed are exclusive." << std::endl;
-	exit(-1);
+	return (-1);
       }
   }
 
@@ -512,5 +512,5 @@ int main (int argc, char** argv)
       if( i==nbIter ) dampingFactor=0;
   }
 
-
+  return 0;
 }

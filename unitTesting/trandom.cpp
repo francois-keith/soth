@@ -421,7 +421,7 @@ int main (int argc, char** argv)
     if (optionMap.count("help"))
       {
 	std::cout << desc << std::endl;
-	exit(0);
+	return(0);
       }
 
     int nbExclusive = 0;
@@ -431,7 +431,7 @@ int main (int argc, char** argv)
     if( nbExclusive>1 )
       {
 	std::cout << "Option bin, file and seed are exclusive." << std::endl;
-	exit(-1);
+	return(-1);
       }
   }
 
@@ -573,8 +573,10 @@ int main (int argc, char** argv)
 
 #ifdef NDEBUG
   if(! DummyActiveSet::explore(J,b,solution) )
-    {      exit(-1);    }
+    { return (-1);    }
 #else
   //  DummyActiveSet::detailActiveSet( J,b,solution,3045,3);
 #endif
+
+  return 0;
 }

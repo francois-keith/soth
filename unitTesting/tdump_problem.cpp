@@ -111,4 +111,5 @@ int main (int argc, char** argv)
     }
 
   fout << endl << "end" << endl << endl;
+  return 0;
 }

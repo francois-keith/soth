@@ -340,4 +340,5 @@ int main(int , char**)
   testStack();
 
   std::cout << "\n\n ... Everything is working fine.\n\n\n" << std::endl;
+  return 0;
 }

@@ -155,4 +155,5 @@ int main()
   testSimpleGivens();
   testSubMatrixGivens();
   testSequenceSub();
+  return 0;
 }

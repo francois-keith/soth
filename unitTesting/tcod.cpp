@@ -43,7 +43,7 @@ int main ( void )
     std::cout << "V = " << (MATLAB)Acod.matrixVr() << std::endl;
     std::cout << "ULV = " << (MATLAB)(MatrixXd)(Acod.matrixUr()*Acod.matrixL()*Acod.matrixVr().transpose()) << std::endl;
     std::cout << "ERR = " << (A-Acod.matrixUr()*Acod.matrixL()*Acod.matrixVr().transpose()).norm() << std::endl;
-    exit(-1);
+    return (-1);
 #endif
 
     /* --- CHRONO --- */

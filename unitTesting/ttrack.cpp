@@ -281,5 +281,5 @@ int main (int argc, char** argv)
       hcod.activeSearch(solution);
     }
 
-
+  return 0;
 }

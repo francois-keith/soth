@@ -976,8 +976,7 @@ int main (int argc, char** argv)
   }
 
 
-  exit( (exitOk?0:1) );
-
+  return( (exitOk?0:1) );
 }
 
 

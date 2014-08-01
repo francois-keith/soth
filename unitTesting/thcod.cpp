@@ -55,4 +55,5 @@ int main (int , char** )
   bool testL = hcod.testLagrangeMultipliers(hcod.nbStages(),std::cout);
   sotDEBUG(5) << "Test multipliers: " << ((testL)?"Passed!":"Failed...") << std::endl;
   assert(testL&&"Lagrange Multipliers test failed.");
+  return 0;
 }

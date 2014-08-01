@@ -48,4 +48,5 @@ int main (int , char** )
   Eigen::VectorXd solution;
   hcod.activeSearch( solution );
   hcod.show(std::cout);
+  return 0;
 }

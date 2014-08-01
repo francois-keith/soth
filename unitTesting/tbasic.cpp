@@ -40,4 +40,5 @@ void testBasicStage()
 int main (int , char** )
 {
   testBasicStage();
+  return 0;
 }
