@@ -62,30 +62,30 @@ namespace soth
 
 
   /* --- IN/OUT PROBLEMS --- */
-  void readProblemFromFile( const std::string name,
+  void readProblemFromFile( const std::string & name,
 			    std::vector<Eigen::MatrixXd> &J,
 			    std::vector<soth::VectorBound> &b,
 			    unsigned int& NB_STAGE,
 			    std::vector<unsigned int> & NR,
 			    unsigned int& NC );
-  void readProblemFromFile( const std::string name,
+  void readProblemFromFile( const std::string & name,
 			    std::vector<Eigen::MatrixXd> &J,
 			    std::vector<soth::VectorBound> &b );
-  void readProblemFromBinFile( const std::string name,
+  void readProblemFromBinFile( const std::string & name,
 			       std::vector<Eigen::MatrixXd> &J,
 			       std::vector<soth::VectorBound> &b,
 			       unsigned int& NB_STAGE,
 			       std::vector<unsigned int> & NR,
 			       unsigned int& NC );
 
-  void writeProblemToFile( const std::string name,
+  void writeProblemToFile( const std::string & name,
 			   const std::vector<Eigen::MatrixXd> &J,
 			   const std::vector<soth::VectorBound> &b,
 			   const unsigned int& NB_STAGE,
 			   const std::vector<unsigned int> & NR,
 			   const unsigned int& NC );
 
-  void writeProblemToFile( const std::string name,
+  void writeProblemToFile( const std::string & name,
 			   const std::vector<Eigen::MatrixXd> &J,
 			   const std::vector<soth::VectorBound> &b );
 }

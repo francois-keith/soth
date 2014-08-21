@@ -90,7 +90,7 @@ namespace soth
     bool testLagrangeMultipliers( unsigned int stageRef,std::ostream& os ) const
     { return testLagrangeMultipliers(stageRef,&os); }
 
-    void setNameByOrder( const std::string root = ""  );
+    void setNameByOrder( const std::string & root = ""  );
     void notifiorRegistration( const Stage::listener_function_t & f,
 			       int stageRank = -1 );
 

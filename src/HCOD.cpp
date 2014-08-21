@@ -134,7 +134,7 @@ namespace soth
     return r;
   }
 
-  void HCOD::setNameByOrder( const std::string root )
+  void HCOD::setNameByOrder( const std::string & root )
   {
     for (size_t i=0; i<stages.size(); ++i)
       {

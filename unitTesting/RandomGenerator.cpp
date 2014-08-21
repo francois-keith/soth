@@ -199,7 +199,7 @@ namespace soth
 
 
 
-  void readProblemFromFile( const std::string name,
+  void readProblemFromFile( const std::string & name,
 			    std::vector<Eigen::MatrixXd> &J,
 			    std::vector<soth::VectorBound> &b,
 			    unsigned int& NB_STAGE,
@@ -366,7 +366,7 @@ namespace soth
 
   }
 
-  void readProblemFromFile( const std::string name,
+  void readProblemFromFile( const std::string & name,
 			    std::vector<Eigen::MatrixXd> &J,
 			    std::vector<soth::VectorBound> &b )
   {
@@ -376,7 +376,7 @@ namespace soth
     readProblemFromFile( name,J,b,NB_STAGE,NR,NC);
   }
 
-  void writeProblemToFile( const std::string name,
+  void writeProblemToFile( const std::string & name,
 			   const std::vector<Eigen::MatrixXd> &J,
 			   const std::vector<soth::VectorBound> &b,
 			   const unsigned int& NB_STAGE,
@@ -431,7 +431,7 @@ namespace soth
     fout << endl << "end" << endl << endl;
   }
 
-  void writeProblemToFile( const std::string name,
+  void writeProblemToFile( const std::string & name,
 			   const std::vector<Eigen::MatrixXd> &J,
 			   const std::vector<soth::VectorBound> &b )
   {
