@@ -180,11 +180,10 @@ void speedTest()
     SubMatrix<MatrixXd, RowPermutation> Pr(A,true);
     SubMatrix<MatrixXd, ColPermutation> Pc(A,true);
 
-    double dummy;
     clock_t start, stop;
     double total;
 
-    dummy = 0;
+    double dummy = 0;
     start = clock();
     for (int j=0; j<N; ++j)
     {

@@ -13,7 +13,8 @@ namespace soth
   HCOD::
   HCOD( unsigned int inSizeProblem, unsigned int nbStage )
   :
-    sizeProblem(inSizeProblem)
+    isDebugOnce(false)
+    ,sizeProblem(inSizeProblem)
     ,Y(sizeProblem)
     ,stages(0)
     ,solution(sizeProblem)
@@ -27,6 +28,19 @@ namespace soth
 
     stages.reserve(nbStage);
   }
+
+  HCOD::
+  HCOD( void )
+  :
+    isDebugOnce(false)
+    ,sizeProblem(0)
+    ,Y(sizeProblem)
+    ,stages(0)
+    ,solution(sizeProblem)
+    ,uNext(sizeProblem),Ytu(sizeProblem),YtuNext(sizeProblem),rho(sizeProblem)
+    ,freezedStages(0)
+    ,isReset(false),isInit(false),isSolutionCpt(false),withDamp(false)
+    {}
 
   /* --- SETTERS/GETTERS ---------------------------------------------------- */
   /* --- SETTERS/GETTERS ---------------------------------------------------- */

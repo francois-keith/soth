@@ -98,7 +98,7 @@ namespace soth
     void debugOnce(std::string filename="",bool keepOpen = false);
 
   protected:
-    HCOD( void ) : Y(0) {};
+    HCOD( void );
 
   protected:public://DEBUG
     unsigned int sizeProblem;

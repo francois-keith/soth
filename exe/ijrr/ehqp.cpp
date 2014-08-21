@@ -74,7 +74,7 @@ void siciliano( const std::vector<Eigen::MatrixXd> &A,
 {
   VectorXd x(NC); x.setZero();
   MatrixXd P(NC,NC); P.setIdentity();
-  int rank=NC; COD Akcod(ComputeFullU | ComputeThinV); 
+  COD Akcod(ComputeFullU | ComputeThinV);
   MatrixXd AkP(NC*2,NC);
 
   for( unsigned int k=0;k<NB_STAGE;++k )
@@ -152,7 +152,6 @@ void hcod( std::vector<Eigen::MatrixXd> &A,
   VectorXd y(NC); y.setZero();
   MatrixXd Z(NC,NC); Z.setIdentity(); MatrixXd Ztmp(NC,NC);
   MatrixXd P(NC,NC); P.setIdentity();
-  double rank=NC;      
   std::vector<COD> Akcod(NB_STAGE);
   std::vector<int> na(NB_STAGE+1);na[0]=NC;
   

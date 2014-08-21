@@ -270,7 +270,7 @@ int main (int argc, char** argv)
       {
 	hcod.update( i,ConstraintRef(2,soth::Bound::BOUND_INF) );
 	exitOk&=hcod.testRecomposition(&std::cout);
-	assert( hcod.rank()==++rank );
+	assert( hcod.rank()== rank+1 );
      }
 
     exitOk &= clearIteralively(hcod);
@@ -610,7 +610,7 @@ int main (int argc, char** argv)
 	const int rankStage = hcod[i].rank();
  	hcod.downdate( i,1 );
 	exitOk&=hcod.testRecomposition(&std::cout);
-	assert( hcod.rank()==--rank );
+	assert( hcod.rank() + 1 == rank);
 	assert( rankStage-1 == hcod[i].rank() );
      }
 

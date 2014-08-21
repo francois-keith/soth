@@ -35,13 +35,13 @@
 int gettimeofday(struct timeval *tv, struct timezone *tz)
 {
   FILETIME ft;
-  unsigned __int64 tmpres = 0;
   static int tzflag;
 
   if (NULL != tv)
     {
       GetSystemTimeAsFileTime(&ft);
 
+      unsigned __int64 tmpres = 0;
       tmpres |= ft.dwHighDateTime;
       tmpres <<= 32;
       tmpres |= ft.dwLowDateTime;
